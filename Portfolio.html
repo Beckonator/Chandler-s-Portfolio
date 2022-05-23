@@ -1,59 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Chandler's Portfolio</title>
-    <link rel="stylesheet" href="Assets/style.css">
-    </head>
-<!-- Top of page -->
-    <body>
-        <div class="header">
-            <h1>Chandler Beck</h1>
-            <div>
-                <ul> 
-                    <li> 
-                        <a href="#About Me">About me</a>
-                    </li>
-                    <li>
-                        <a href="#Work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact Me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#Resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--Sections -->
-        <div class="content">
-            <!-- Bio -->
-            <div class="About me" id="About me">
-                <h2>About Me</h2>
-                <p>
-                    Talk about myself
-                </p>
-            </div>
-            <!-- Folders -->
-            <div class="Work" id="Work">
-                <h2>Work</h2>
-                <section class="main folder">
-                    <header>Run Buddy</header>
-                    <img src="./Assets/Images/hero-bg.jpg" alt="Runner tying shoe" />
-                </section>     
-                <section class="folder">
-                    <header>Code Refactor</header>
-                    <img src="./Assets/Images/digital-marketing-meeting.jpg" alt="marketing team discussing" />
-                </section>
-            </div>
-            <!-- Contact Info -->
-            <div class="Contact Me" id="Contact me">
-                <h2>Contact Me</h2>
-               <email>Beckonator25@gmail.com</email>
-               <h3>385-277-1111</h3>
-               <h3>Github</h3>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Chandler Beck's Portfolio</title>
+  </head>
 
+  <body>
+    <!--Header and Nav Section-->
+    <header>
+      <div><h1>Chandler Beck</h1></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#my-work">My Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Hero Image Section-->
+    <section class="hero">
+      <div class="quote">
+        <blockquote>
+          <p id="quote-text">
+            "Yesterday is history, <br />
+            tomorrow is a mystery, <br />
+            and today is a gift... <br />
+            that's why they call it present"
+          </p>
+          <p>- Master Oogway</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!--About Me Section-->
+    <section id="about-me" class="about-me">
+      <div class="title">
+        <h2>About Me</h2>
+      </div>
+
+      <div>
+        <p>
+          My name is Chandler Beck and I am currently schooling at Utah Valley
+          University for Computer Science. I have put a pause on my degree to
+          learn how to become a full stack developer and will update this
+          portfolio with all my completed projects.
+        </p>
+      </div>
+    </section>
+
+    <!--My Work Section-->
+    <section id="my-work" class="my-work">
+      <div class="title"><h2>My Work</h2></div>
+      <div class="projects-grid-wrapper">
+        <div class="projects-grid">
+          <a href="" target="_blank" class="project uhoo">
+            <div class="project-label">
+              <h3>Uhoo</h3>
+              <p>Java/CSS/API</p>
             </div>
+          </a>
+          <a href="" target="_blank" class="project passwordgen">
+            <div class="project-label">
+              <h3>Pasword Generator</h3>
+              <p>Java/CSS</p>
+            </div>
+          </a>
+          <a href="" target="_blank" class="project codequiz">
+            <div class="project-label">
+              <h3>Code Quiz</h3>
+              <p>Python/CSS</p>
+            </div>
+          </a>
+          <a href="" target="_blank" class="project workdayscheduler">
+            <div class="project-label">
+              <h3>Work Day Scheduler</h3>
+              <p>Java/CSS</p>
+            </div>
+          </a>
+          <a href="" target="_blank" class="project weatherdash">
+            <div class="project-label">
+              <h3>Weather Dashboard</h3>
+              <p>Java,CSS,API</p>
+            </div>
+          </a>
         </div>
-    </body>
+      </div>
+    </section>
+
+    <!--Contact Info-->
+    <footer id="contact-me">
+      <div class="title"><h2>Contact Me</h2></div>
+      <div class="content-wrapper">
+        <div id="contact-list">
+          <ul>
+            <li>
+              <a href="mailto:beckonator25@gmail.com">Email Me</a>
+            </li>
+            <li>
+              <a href="https://github.com/Beckonator" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/chandler-beck-174b92227/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <p>(385)277-1111</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
